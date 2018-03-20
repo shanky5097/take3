@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -9,40 +10,84 @@
     tools:showIn="@layout/app_bar_main">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cardView1"
-        android:layout_width="match_parent"
+        android:id="@+id/cardView"
+        android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <view
+            android:id="@+id/v1"
+            class="android.support.design.internal.BaselineLayout"
+            id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginTop="120dp"
+            android:background="@android:color/holo_red_dark"
+            android:solidColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:text="Treatment"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cardio"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/define"
+            android:padding="10dp"
+            android:src="@drawable/cardiogram" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <view
+            android:id="@+id/view2"
+            class="android.support.design.internal.BaselineLayout"
+            id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginTop="120dp"
+            android:background="@android:color/holo_purple"
+            android:solidColor="@color/colorAccent" />
+
         <ImageView
             android:id="@+id/infoLogo"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/define"
             android:padding="10dp"
-            android:src="@drawable/info"
-            android:contentDescription="@string/define" />
+            android:src="@drawable/info" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="80dp"
             android:text="@string/depression"
-            android:textColor="#8A2BE2"
-            android:textSize="40sp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="24sp"
             android:textStyle="bold" />
-        <view
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="@color/colorPurple"
-            android:layout_marginTop="120dp"/>
+
     </android.support.v7.widget.CardView>
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
-
-
-
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
