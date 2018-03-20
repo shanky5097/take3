@@ -10,84 +10,218 @@
     tools:showIn="@layout/app_bar_main">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cardView"
+        android:id="@+id/cv1"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cardView1"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <view
-            android:id="@+id/v1"
-            class="android.support.design.internal.BaselineLayout"
-            id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="20sp"
-            android:layout_marginTop="120dp"
-            android:background="@android:color/holo_red_dark"
-            android:solidColor="@color/colorAccent" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="80dp"
-            android:text="Treatment"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/cardio"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center_horizontal"
-            android:contentDescription="@string/define"
-            android:padding="10dp"
-            android:src="@drawable/cardiogram" />
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardView1"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/cv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <view
-            android:id="@+id/view2"
-            class="android.support.design.internal.BaselineLayout"
-            id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="20sp"
-            android:layout_marginTop="120dp"
-            android:background="@android:color/holo_purple"
-            android:solidColor="@color/colorAccent" />
-
         <ImageView
-            android:id="@+id/infoLogo"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center_horizontal"
-            android:contentDescription="@string/define"
-            android:padding="10dp"
-            android:src="@drawable/info" />
-
-        <TextView
+            android:id="@+id/iv3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/info" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="75sp"
             android:text="@string/depression"
+            android:textAppearance="@android:style/TextAppearance.Material.Display1"
             android:textColor="@android:color/darker_gray"
-            android:textSize="24sp"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <view
+            android:id="@+id/v3"
+            class="android.support.v7.widget.AppCompatImageView"
+            id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginTop="120dp"
+            android:background="@android:color/holo_purple" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginVertical="150sp"
+            android:text="'Cuz It's Not Just The Saddness"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
     </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cv1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/i2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/type" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="75sp"
+            android:text="Types"
+            android:textAppearance="@android:style/TextAppearance.Material.Display1"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <view
+            android:id="@+id/v2"
+            class="android.support.v7.widget.AppCompatImageView"
+            id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginTop="120dp"
+            android:background="@android:color/holo_orange_light" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginVertical="150sp"
+            android:text="'Cuz Depression Comes In Many Forms"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="116dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cardView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv1">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/treatment" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="75sp"
+            android:text="Treatment"
+            android:textAppearance="@android:style/TextAppearance.Material.Display1"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <view
+            android:id="@+id/v"
+            class="android.support.v7.widget.AppCompatImageView"
+            id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginTop="120dp"
+            android:background="@android:color/holo_red_light" />
+
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginVertical="150sp"
+            android:text="'Cuz You Can't JUST STOP Being Depressed"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="116dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cv2">
+
+        <ImageView
+            android:id="@+id/i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/dosdonts" />
+
+        <view
+            android:id="@+id/v4"
+            class="android.support.v7.widget.AppCompatImageView"
+            id="@+id/vw3"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginTop="120dp"
+            android:background="@android:color/holo_blue_bright"
+            android:textColor="@android:color/holo_blue_bright" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginVertical="150sp"
+            android:text="Cuz Depression Comes In Many Forms"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="75sp"
+            android:text="Do's and Don'ts"
+            android:textAppearance="@android:style/TextAppearance.Material.Display1"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
 
 
 </android.support.constraint.ConstraintLayout>
