@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DIPALI</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="dipali">DIPALI</string>
+    <string name="you_are_not_alone_anymore">You Are Not Alone... Anymore!</string>
+    <string name="friendbot">FriendBot</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="infodip">InfoDip</string>
+    <string name="find_a_doc">Find a Doc</string>
+    <string name="medical_records">Medical Records</string>
+    <string name="s_w_o_t_analysis">S.W.O.T. Analysis</string>
+    <string name="s_m_a_r_t_goals">S.M.A.R.T. Goals</string>
+    <string name="assignments">Assignments</string>
+    <string name="reminder">Reminder</string>
+    <string name="depression">Depression</string>
+    <string name="define">Define</string>
+</resources>

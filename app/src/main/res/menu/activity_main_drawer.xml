@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/friendBot"
+            android:icon="@drawable/chat"
+            android:title="@string/friendbot" />
+        <item
+            android:id="@+id/diagnosis"
+            android:icon="@drawable/stethoscope"
+            android:title="@string/diagnosis" />
+        <item
+            android:id="@+id/infoDip"
+            android:icon="@drawable/idea"
+            android:title="@string/infodip" />
+        <item
+            android:id="@+id/findDoc"
+            android:icon="@drawable/doc"
+            android:title="@string/find_a_doc" />
+        <item
+            android:id="@+id/medicalRecords"
+            android:icon="@drawable/medics"
+            android:title="@string/medical_records" />
+        <item
+            android:id="@+id/swot"
+            android:icon="@drawable/swot"
+            android:title="@string/s_w_o_t_analysis" />
+        <item
+            android:id="@+id/smart"
+            android:icon="@drawable/target"
+            android:title="@string/s_m_a_r_t_goals" />
+        <item
+            android:id="@+id/assign"
+            android:icon="@drawable/assign"
+            android:title="@string/assignments" />
+        <item
+            android:id="@+id/reminder"
+            android:icon="@drawable/reminder"
+            android:title="@string/reminder" />
+        <item
+            android:id="@+id/diary"
+            android:icon="@drawable/notebook"
+            android:title="Dear Diary" />
+
+    </group>
+</menu>
