@@ -1,5 +1,6 @@
 package com.example.windows81.dipali
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -92,7 +93,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             }
             R.id.diary -> {
-
+                val intent = Intent(this,diary_home::class.java);
+                startActivity(intent);
             }
         }
 

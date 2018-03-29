@@ -18,4 +18,5 @@
     <string name="reminder">Reminder</string>
     <string name="depression">Depression</string>
     <string name="define">Define</string>
+    <string name="title_activity_diary_home">diary_home</string>
 </resources>
